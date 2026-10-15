@@ -1,26 +1,19 @@
 {
-  "dateToronto": "2026-10-14",
-  "apk": "refuge-vivant-phase1-arm64.apk",
-  "bytes": 37394874,
-  "sha256": "43ec6f213178b485f584e9ba452e6c90c6cf5c1460837ed11b31cd0ba3569af0",
-  "versionName": "0.1.0",
-  "versionCode": 2,
-  "abis": [
-    "arm64-v8a"
-  ],
+  "version": "0.1.1",
+  "versionCode": 3,
+  "bytes": 37494330,
+  "sha256": "9f0f9051ff5148abb975dfac3616075ba1be01a00094c904aa3e45fbe3bab944",
+  "typescriptTests": 36,
+  "typescriptPassed": 36,
+  "androidModuleTests": 6,
+  "androidModulePassed": 6,
+  "engineAndSaveChanged": false,
+  "sameTestCertificate": true,
+  "arm64Only": true,
   "permissions": [
     "android.permission.INTERNET",
     "org.refugevivant.lab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
     "android.permission.ACCESS_NETWORK_STATE"
   ],
-  "phase1PhysicalDevicesTested": [],
-  "typescriptTests": 36,
-  "typescriptPassed": 36,
-  "internalBuild": true,
-  "sameSigningCertificateAsPhase0": true,
-  "androidModuleTests": {
-    "tests": 6,
-    "passed": 6,
-    "skipped": 0
-  }
+  "physicalDevicesForThisBuild": []
 }
