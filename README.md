@@ -1,19 +1,21 @@
-# Refuge vivant — téléchargement Android
+# Refuge vivant — prototype Android 0.1.0
 
-APK de laboratoire, phase 0. Le jeu complet n’est pas encore implémenté. Aucun compte requis pour le téléchargement.
+Compagnons fantastiques et refuge personnel : soins, invitations libres, visiteurs récurrents et relations persistantes. Ce prototype n’a aucun achat.
 
-[Télécharger l’APK](https://raw.githubusercontent.com/maxstg7-wq/refuge-vivant-downloads/main/refuge-vivant-phase0-arm64.apk)
+[Télécharger le prototype interne 0.1.0](https://raw.githubusercontent.com/maxstg7-wq/refuge-vivant-downloads/main/refuge-vivant-phase1-arm64.apk)
 
-![QR code de téléchargement](qr-android.png)
+![QR de téléchargement](qr-android.png)
 
-## Installer
+Le QR conserve son adresse historique `refuge-vivant-phase0-arm64.apk`, maintenant mise à jour vers **0.1.0/code 2**. Le laboratoire 0.0.1 est archivé séparément dans `refuge-vivant-phase0-archive.apk` ; ne pas le réinstaller sur une sauvegarde migrée.
 
-Scanner le QR code avec le téléphone Android, ouvrir le lien dans son navigateur et télécharger l’APK. Ouvrir le fichier puis autoriser cette source d’installation si Android le demande, sans désactiver Play Protect. Ouvrir **Refuge vivant · labo**, ajouter le widget, changer la pose puis vérifier le résultat sur l’écran d’accueil et les liens refuge/repas.
+## Installer la mise à jour
 
-Version 0.0.1, signature de test, Android 7/API 24 minimum, système **arm64-v8a** requis. Un ancien téléphone utilisant Android 32 bits ne peut pas installer ce build. Aucun téléphone physique encore validé. Compilation native réussie ; 17 tests TypeScript/SQLite et 6 tests du module Android réussis.
+Ouvrir l’APK sur Android arm64, Android 7 minimum. Installer **par-dessus** Refuge vivant · labo sans désinstaller ni effacer ses données. Le certificat de test est identique au build initial. La migration conserve Véli et les données du labo, puis crée le monde jouable. Aucun compte GitHub requis pour le lien direct. Ne pas désactiver Play Protect ; conserver tout avertissement pour diagnostic.
 
-Le téléchargement utilise une adresse fixe, sans expiration programmée ; elle fonctionne tant que ce dépôt reste public et que le fichier est conservé à cet emplacement. Le QR contient uniquement cette adresse HTTPS.
+Maison : cinq soins et choix du résident pour le widget. Jardin : cueillette gratuite, visiteurs, moments à deux et offres de résidence. Atelier : fabriquer puis poser une invitation. Carnet : rencontres et souvenirs. Pour une première démonstration rapide, ouvrir **Outils du prototype interne → +1 h**. +24 h permet de tester les journées suivantes. Les animaux restent libres et l’installation demande un accord explicite.
 
-Le dépôt contient le binaire de test et son QR, pas le code source. Sources dans le dépôt séparé `maxstg7-wq/refuge-vivant-game`. Aucun paiement ni publication Google Play. Assets originaux provisoires ; aucune licence publique de redistribution accordée.
+Ce build interne inclut les outils de temps, désactivés dans un build normal. Nouveaux textes FR, visuels/animations simples provisoires, aucune boutique ni publication Google Play. Le retour utilisateur du labo est positif ; le nouveau build reste à tester sur appareil. iOS est reporté.
 
-SHA256 actuel : `136fd62f2ca25c4cf575354e5dfe8147da7f148bc8553d1b0826e7be3a4ea561`.
+Vérifié : 36 tests TypeScript/SQLite, six tests Android, compilation native Release, signature v2, même certificat, ABI arm64, permissions sans overlay/billing. SHA256 : `be497883f9072097e67d5195c1cdb575a458b69ad82ba9f5832cc5b0024bfdb7`. Résumé machine : `phase1-validation.json`. Le téléchargement reste disponible tant que le dépôt et le fichier sont conservés.
+
+Sources complètes, instructions et rapports dans le dépôt séparé `maxstg7-wq/refuge-vivant-game`. Ce dépôt de téléchargement ne contient pas les sources privées. Assets originaux provisoires ; aucune licence publique de redistribution accordée.
