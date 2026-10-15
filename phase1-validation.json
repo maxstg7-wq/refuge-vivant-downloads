@@ -1,19 +1,37 @@
 {
-  "version": "0.1.1",
-  "versionCode": 3,
-  "bytes": 37494330,
-  "sha256": "9f0f9051ff5148abb975dfac3616075ba1be01a00094c904aa3e45fbe3bab944",
-  "typescriptTests": 36,
-  "typescriptPassed": 36,
-  "androidModuleTests": 6,
-  "androidModulePassed": 6,
-  "engineAndSaveChanged": false,
-  "sameTestCertificate": true,
-  "arm64Only": true,
-  "permissions": [
-    "android.permission.INTERNET",
-    "org.refugevivant.lab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-    "android.permission.ACCESS_NETWORK_STATE"
+  "version": "0.2.0",
+  "versionCode": 4,
+  "date": "2026-10-15",
+  "apk": "refuge-vivant-phase1-arm64.apk",
+  "bytes": 37762458,
+  "sha256": "0bcd3b27173239b559fe925a87af6f48bbe7e675e2d8112cd184d2d13898ead4",
+  "package": "org.refugevivant.lab",
+  "abi": [
+    "arm64-v8a"
   ],
-  "physicalDevicesForThisBuild": []
+  "minSdk": 24,
+  "targetSdk": 36,
+  "signature": "v2; same debug certificate as 0.1.1",
+  "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
+  "typescriptSqliteTests": {
+    "passed": 41,
+    "failed": 0,
+    "skipped": 0
+  },
+  "androidJvmTests": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "androidBuild": "Release test-signed; BUILD SUCCESSFUL in 1m 31s; Hermes bundle regenerated",
+  "physicalDevicesThisVersion": [],
+  "priorUserObservation": "Android 10; prior prototype reported working; model unknown; not a detailed device protocol",
+  "ios": "Sources/prebuild and structural tests only; no Xcode build or iPhone test",
+  "limits": [
+    "Provisional original artwork and translation/breathing/effect animations, no dedicated frame animation or sound",
+    "Gesture/scroll conflicts, TalkBack/large text and performance still require physical-device testing",
+    "Second social partner selected automatically",
+    "Mixing tray is temporary without stock debit until crafting",
+    "Internal simulated-time tools present; no payments or overlay"
+  ]
 }
