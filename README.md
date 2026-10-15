@@ -16,6 +16,6 @@ Maison : cinq soins et choix du résident pour le widget. Jardin : cueillette gr
 
 Ce build interne inclut les outils de temps, désactivés dans un build normal. Nouveaux textes FR, visuels/animations simples provisoires, aucune boutique ni publication Google Play. Le retour utilisateur du labo est positif ; le nouveau build reste à tester sur appareil. iOS est reporté.
 
-Vérifié : 36 tests TypeScript/SQLite, six tests Android, compilation native Release, signature v2, même certificat, ABI arm64, permissions sans overlay/billing. SHA256 : `be497883f9072097e67d5195c1cdb575a458b69ad82ba9f5832cc5b0024bfdb7`. Résumé machine : `phase1-validation.json`. Le téléchargement reste disponible tant que le dépôt et le fichier sont conservés.
+Vérifié : 36 tests TypeScript/SQLite, six tests Android, compilation native Release, signature v2, même certificat, ABI arm64, permissions sans overlay/billing. SHA256 : `43ec6f213178b485f584e9ba452e6c90c6cf5c1460837ed11b31cd0ba3569af0`. Résumé machine : `phase1-validation.json`. Le téléchargement reste disponible tant que le dépôt et le fichier sont conservés.
 
 Sources complètes, instructions et rapports dans le dépôt séparé `maxstg7-wq/refuge-vivant-game`. Ce dépôt de téléchargement ne contient pas les sources privées. Assets originaux provisoires ; aucune licence publique de redistribution accordée.
