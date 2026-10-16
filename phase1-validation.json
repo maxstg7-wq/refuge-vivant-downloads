@@ -1,10 +1,10 @@
 {
-  "version": "0.3.0",
-  "versionCode": 5,
-  "dateToronto": "2026-10-15",
+  "version": "0.4.0",
+  "versionCode": 6,
+  "dateToronto": "2026-10-16",
   "package": "org.refugevivant.lab",
-  "bytes": 38484720,
-  "sha256": "2f0ea01997f21b555e41d25a198b9217f3b2f0a8d96b92915e249a47a6447fac",
+  "bytes": 38566584,
+  "sha256": "3867ae138e703911db4c32d7523ae577a22608ceccd647f8c29c3ce52cd8ee93",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
   "sameTestCertificate": true,
   "abi": [
@@ -12,27 +12,46 @@
   ],
   "minSdk": 24,
   "targetSdk": 36,
+  "worldSchema": 3,
+  "databaseSchema": 3,
+  "widgetSchema": 1,
+  "widgetDashboardOptional": true,
   "typecheck": "passed",
   "typescriptSqlitePresentationTests": {
-    "passed": 46,
+    "passed": 53,
     "failed": 0,
     "skipped": 0
   },
   "androidJvmTests": {
-    "passed": 6,
+    "passed": 10,
     "failed": 0,
-    "errors": 0
+    "skipped": 0,
+    "suites": [
+      [
+        "org.refugevivant.widget.SnapshotContractTest",
+        6
+      ],
+      [
+        "org.refugevivant.widget.WidgetPresentationTest",
+        4
+      ]
+    ]
   },
-  "buildResult": "BUILD SUCCESSFUL in 1m 59s",
-  "newSpriteSheetsPackedAndPixelVerified": 16,
-  "drawnFrames": 96,
-  "engineAndSaveChanged": false,
+  "buildResult": "BUILD SUCCESSFUL in 1m 13s",
+  "nativeWidgetLayoutsPacked": [
+    "RemoteViews static",
+    "ViewFlipper six frames",
+    "TextClock"
+  ],
+  "permissionsChecked": true,
+  "engineChanged": true,
+  "worldMigration": "2 to 3; preserves inventory, identities, relationships, clock and receipts",
   "physicalDevicesForThisBuild": [],
-  "ios": "Prebuild/source structure only; no Xcode build or iPhone test",
+  "ios": "Existing static widget/source prebuild only; no Xcode build or device test",
   "limits": [
-    "Provisional vector art; no sounds",
-    "No physical-device gesture/accessibility/memory/battery validation",
-    "Second social partner still automatic",
-    "No stories/eggs, payments, overlay or store publication"
+    "Launcher RemoteViews inflation, motion, resizing and buttons not device-tested",
+    "OS may defer nominal 30-minute updates; widget does not simulate game",
+    "Provisional original artwork; no sound or furniture collision solver",
+    "No payments, overlay, foreground service, exact alarm or store publication"
   ]
 }
