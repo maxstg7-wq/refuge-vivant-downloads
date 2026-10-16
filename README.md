@@ -1,37 +1,39 @@
-# Refuge vivant — prototype Android 0.4.0
+# Refuge vivant — prototype Android 0.5.0
 
-Compagnons fantastiques, soins, refuge personnel, invitations libres et relations persistantes. Pas de compte dans le jeu, aucun achat.
+Compagnons fantastiques, soins, refuge, invitations libres et relations persistantes. Aucun compte ni achat dans le jeu.
 
-[Télécharger 0.4.0](https://raw.githubusercontent.com/maxstg7-wq/refuge-vivant-downloads/main/refuge-vivant-phase1-arm64.apk?v=0.4.0)
+[Télécharger 0.5.0](https://raw.githubusercontent.com/maxstg7-wq/refuge-vivant-downloads/main/refuge-vivant-phase1-arm64.apk?v=0.5.0)
 
 ![QR du dernier APK](qr-android.png)
 
-Le QR conserve sa cible historique `refuge-vivant-phase0-arm64.apk`, identique à l’alias phase1 : **0.4.0/code 6**. L’ancien laboratoire est archivé séparément et ne doit pas être réinstallé après migration.
+Le QR conserve sa cible historique `refuge-vivant-phase0-arm64.apk`, identique à l’alias phase1 : **0.5.0/code7**. Le laboratoire original est archivé séparément ; ne pas réinstaller une ancienne version après migration.
 
 ## Installer
 
-Android arm64, Android 7 minimum. Installer **par-dessus** Refuge vivant · labo, sans désinstaller ni effacer ses données. Identifiant et signature de test conservés. Le monde migre 2→3 sans perdre les noms, l’inventaire, les amitiés, les horloges et les reçus. Ne pas réinstaller une ancienne version après migration.
+Android7/API24 minimum, système **arm64-v8a**. Installer **par-dessus** Refuge vivant, sans désinstaller ni effacer ses données. Même identifiant `org.refugevivant.lab` et certificat de test conservé. Les sauvegardes du laboratoire et du monde2 migrent vers monde3 ; SQLite3 demeure. Aucun compte GitHub requis pour télécharger l’APK.
 
-## Dans le refuge
+## Jouer
 
-- Soins : glisser bol, bain, lit ou balle vers un compagnon, ou le choisir puis toucher l’objet. Déposer dans le vide ne dépense rien. Dessins de repas/bain/câlin/jeu et refus respectant préférences et repos.
-- Jardin : toucher une terre pour planter gratuitement, une pousse pour arroser une fois, puis Récolter lorsqu’elle est prête. Trois cultures, sans expiration. Les fleurs sauvages donnent aussi des ressources gratuites.
-- Maison : toucher **Aménager**, puis un plan pour créer une jardinière, une lanterne ou un tapis ; glisser ensuite la création. Coût unique et place sauvegardée. Terminer revient aux soins.
-- Rencontres : sélectionner un compagnon puis glisser balle/banc vers un autre pour choisir les deux participants. Atelier : préparer les ingrédients et le parfum, puis Inviter ; les visiteurs restent libres.
-- Le fil du refuge relie ces découvertes et reprend les accomplissements conservés. Les outils internes +1 h/+24 h permettent des essais accélérés, distincts du temps réel.
+Le refuge occupe l’écran. Toucher la porte pour le jardin, le panier pour l’atelier et les panneaux pour revenir. Choisir un compagnon puis toucher un objet, ou l’approcher du compagnon.
 
-## Le widget Android
+- Repas : apporter trois bouchées d’une portion vers sa bouche.
+- Bain : frotter six traces de terre. Câlin : trois longues caresses. Balle : trois lancers vers des cibles changeantes.
+- Une seule commande de soin est sauvegardée à la fin ; un geste raté ne dépense rien. Les refus, le sommeil et les plafonds restent respectés. Partie/câlin pour le plaisir sans nouveau gain lorsque permis.
+- Jardin : fleurs sauvages, trois cultures gratuites à planter/arroser/récolter sans expiration. Maison : Aménager pour fabriquer et déplacer trois créations persistantes.
+- Atelier : verser les ingrédients dans le flacon, tourner le mélange, puis emporter le parfum au jardin. Les visiteurs viennent et repartent librement. Première visite d’un nouveau refuge après deux minutes simulées ; aucune remise à zéro des anciens mondes.
+- Pour les activités à deux, sélectionner un compagnon puis déposer balle/banc sur un autre au jardin. Les préférences et le consentement sont conservés.
+- Les arrivées/amitiés ont une courte scène souvenir ; le carnet illustré conserve les rencontres. Sac, fiches et options sont secondaires.
 
-Toucher **✧ Widget** dans l’application pour l’ajouter. Décor jour/nuit, horloge du téléphone, clignement natif, besoins enregistrés et nouvelles du refuge. **Nouvelles** parcourt besoins/compteurs/événement sans ouvrir le jeu ; **Pause/Animer** contrôle le mouvement ; **Repas** ouvre le bon compagnon sans dépenser de baie.
+## Widget Android
 
-Le sommeil, l’économie d’énergie et la suppression des animations imposent une image fixe. Les valeurs sont celles du dernier état reçu, sans deuxième moteur ; les états anciens sont signalés. Actualisation système demandée à 30 minutes, différable par Android. L’animation dépend du lanceur et n’est pas une présence flottante. Si l’ancien layout reste en cache, retirer uniquement le widget et l’ajouter à nouveau ; ne pas désinstaller l’app.
+Dans **⋯ → Ajouter le compagnon sur l’accueil**, ajouter le widget. Décor jour/nuit, horloge, clignement discret, besoins enregistrés et nouvelles. Nouvelles change de carte ; Pause/Animer contrôle le mouvement ; Repas ouvre le jeu sans dépense. Sommeil/mouvement réduit/économie d’énergie imposent une image fixe. Dernier état reçu seulement, sans second moteur ; rafraîchissement demandé30min, différable par Android et animation dépendante du lanceur. Si ancien layout en cache, retirer seulement le widget et le rajouter.
 
-## Vérifié et restant à tester
+## Vérifié et limites
 
-53 tests TypeScript/SQLite/présentation et dix tests uniques du module Android réussis. Compilation native Release, signature v2 identique, ABI arm64, ressources ViewFlipper/TextClock et dessins embarqués contrôlés. Aucun overlay, paiement, service permanent ou alarme exacte.
+**61 tests TypeScript/SQLite/présentation et dix tests natifs Kotlin réussis.** APK Release arm64 compilé, même certificat, version7/API24+, bundle Hermes et43 PNG référencés vérifiés. Aucun overlay, paiement, service permanent ou alarme exacte.
 
-**Aucun appareil n’a exécuté 0.4.0 dans le cloud.** Il reste à vérifier le lanceur réel, affichage/clignement/boutons/redimensionnement du widget, gestes, accessibilité, fluidité, mémoire et batterie. iOS conserve son widget précédent, source/prebuild seulement, non compilé. Art provisoire, sans sons, collisions de placement, histoires/œufs ou publication boutique.
+Émulateur Android10 logiciel : habitat affiché et activité repas ouverte sur un build intermédiaire. ANR de System UI et corruption graphique ; parcours gestuel complet non validé. Mise à jour finale dans cet émulateur : délai expiré, lancement blanc lors du contrôle. **Aucun essai physique de0.5.0** : gestes, rendu, widget, TalkBack, fluidité/mémoire/batterie restent à vérifier sur téléphone. iOS : sources/prebuild seulement, aucun Xcode/IPA. Art et animations provisoires, aucun son, histoires/œufs, synchronisation ou publication boutique.
 
-APK : 38 566 584 octets ; SHA256 `3867ae138e703911db4c32d7523ae577a22608ceccd647f8c29c3ce52cd8ee93`. Rapport machine : `phase1-validation.json`. Le QR reste valide tant que ce dépôt et son chemin sont conservés.
+APK : **38 574 532 octets** ; SHA256 `85ed3972ce825bebafdd6751e3be45bc973fe749fc9eb9944bdf777bd18cff0f`. Rapport machine : `phase1-validation.json`. Le QR reste valide tant que le dépôt et ce chemin restent disponibles.
 
-Sources privées, instructions, décisions et rapport complet : dépôt séparé `maxstg7-wq/refuge-vivant-game`, `docs/refuge-widget-validation.md`. Ce dépôt public ne contient pas les sources privées. Assets originaux provisoires, licence de redistribution externe non accordée.
+Code complet, instructions, décisions, backlog et rapport détaillé dans le dépôt privé `maxstg7-wq/refuge-vivant-game`, `docs/habitat-validation.md`. Ce dépôt public ne contient pas les sources privées. Assets originaux provisoires, licence de redistribution externe non accordée.
