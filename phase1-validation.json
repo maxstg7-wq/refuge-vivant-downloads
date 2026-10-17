@@ -1,18 +1,18 @@
 {
-  "version": "0.7.0",
-  "versionCode": 9,
+  "version": "0.8.0",
+  "versionCode": 10,
   "package": "org.refugevivant.lab",
-  "bytes": 38904332,
-  "sha256": "4ac0663f4e812ea6130d5b6c0ddc3a85a50f8b84aca766ba49aee917b1f757e0",
+  "bytes": 38962960,
+  "sha256": "a505f552d1646bd0956c8ef8a4e6eabfb76401605801b5566b3304226c15e919",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
   "minimumAndroid": "7/API24",
   "abi": "arm64-v8a",
-  "worldSchema": 4,
+  "worldSchema": 5,
   "sqliteSchema": 3,
   "widgetContract": 1,
   "rulesVersion": 1,
   "typescriptTests": {
-    "passed": 84,
+    "passed": 96,
     "failed": 0,
     "skipped": 0
   },
@@ -22,10 +22,10 @@
     "skipped": 0
   },
   "typecheck": "passed",
-  "hermesSha256": "59628166c1e4f4081a82013c89a1f94f013bba2945437af3ac55d80519fe0623",
-  "emulatorApkSha256": "ff3bd9c21cfd91fe69ec8b34dac65d54528c2d2e85fda1112979ed308145c4bf",
+  "hermesSha256": "533edc1e387cdd78926782f1cb6663054f7082b796ac9e3be46298dde365c021",
+  "emulatorApkSha256": "f13b8e998f7f98caffcf4b82796894a4dd30906ef1f4915599a4842446d54b47",
   "hermesIdenticalAcrossArchitectures": true,
-  "referencedOriginalPngsVerifiedByDecodedPixels": 53,
+  "referencedOriginalPngsVerifiedByDecodedPixels": 57,
   "assetManifestHashes": "all verified",
   "physicalDevicesTested": [],
   "ios": "sources/prebuild only; no Xcode/IPA/iPhone",
@@ -33,24 +33,26 @@
     "system": "Android 10/API29 x86_64",
     "display": "320x640, software rendering without KVM",
     "normalAnimationPerformance": "not measured; system animation scale disabled",
-    "installedApkSha256": "ff3bd9c21cfd91fe69ec8b34dac65d54528c2d2e85fda1112979ed308145c4bf",
-    "checks": [
-      "Upgrade preserved 6 berries, 8 petals, three creature identities and moonleaf collection",
-      "Final APK: partial quiet gesture, background and reopen resets unclaimed progress",
-      "Final APK: three real light gestures, saved memory and journal with both participants",
-      "Final APK: force-stop/reopen retains shared memory",
-      "Final APK: four alternating ball gestures between Ambre and Veli, saved memory"
+    "installedApkSha256": "f13b8e998f7f98caffcf4b82796894a4dd30906ef1f4915599a4842446d54b47",
+    "upgrade": "world4 to5 on final APK; inventory, creature identities/names/traits/residence, furniture and collection retained",
+    "fixture": "native-eight at minute2, produced by engine commands only: sharedPlay quiet, wash, plant; no edited scores/traits; isolated AVD, previous SQLite backed up",
+    "observations": [
+      "Resident autonomously waters an unwatered plot without player watering gesture; action bubble visible",
+      "All three shelter stages completed by real native drag gestures",
+      "Force-stop after stage1, reopen resumes at stage2",
+      "Both builders sleep under complete shelter; gentle wake leaves other builder asleep",
+      "Native SQLite snapshot confirms stage3, inventory 8 berries/2 petals/2 honey/2 dust, one completion and one first-rest keepsake"
     ],
-    "fixtures": "Upgrade uses previous emulator save. Initial pilot observed natural first visitor. Final gesture checks use valid worlds produced by the pure engine: native-final-quiet/minute2, native-ball-46/minute180. Only isolated VM test saves were replaced; backup retained. No phone data modified.",
-    "intermediateRuns": "Earlier exploratory UI runs are separate; one stopped before the final APK installation. They are not counted as final passing scenarios."
+    "pilot": "Earlier 0.8 APK with action bubbles below actors used to check layout, distinct from final evidence; final controls rerun after bubble correction",
+    "physicalDevices": []
   },
   "limitations": [
     "Provisional art; no sound",
     "Physical gestures, TalkBack, large fonts, normal frame rate, battery and launcher widget still to test",
     "No store, payment, overlay, cloud saves, shared stories or eggs"
   ],
-  "buildResult": "BUILD SUCCESSFUL in 1m 11s",
-  "emulatorBuildResult": "BUILD SUCCESSFUL in 53s",
-  "physicalFeedbackPreviousVersion": "User reports 0.6.0 installation refusal caused by full phone storage; resolved and working after freeing space. No detailed physical 0.7.0 protocol completed.",
-  "sourceCommit": "3d18be7fd7f849fc696b8e781e83107c45cb4e9f"
+  "buildResult": "BUILD SUCCESSFUL in 1m 14s",
+  "emulatorBuildResult": "BUILD SUCCESSFUL in 58s",
+  "builtSourceContentMatches": 29,
+  "sourceCommit": "81c064ebf57ceb04e8d66b8afd17f1d152ad7540"
 }
