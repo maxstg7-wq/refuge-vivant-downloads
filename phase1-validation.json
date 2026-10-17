@@ -1,66 +1,56 @@
 {
-  "version": "0.6.0",
-  "versionCode": 8,
-  "dateToronto": "2026-10-16",
+  "version": "0.7.0",
+  "versionCode": 9,
   "package": "org.refugevivant.lab",
-  "bytes": 38891020,
-  "sha256": "2d5c3bc98a8c7b30665fca296f210810d6cc37ab306d9cdad39c767316706617",
+  "bytes": 38904332,
+  "sha256": "4ac0663f4e812ea6130d5b6c0ddc3a85a50f8b84aca766ba49aee917b1f757e0",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
-  "sameTestCertificate": true,
-  "abi": [
-    "arm64-v8a"
-  ],
-  "minSdk": 24,
-  "targetSdk": 36,
+  "minimumAndroid": "7/API24",
+  "abi": "arm64-v8a",
   "worldSchema": 4,
-  "databaseSchema": 3,
-  "widgetSchema": 1,
-  "typecheck": "passed",
-  "typescriptSqlitePresentationTests": {
-    "passed": 74,
+  "sqliteSchema": 3,
+  "widgetContract": 1,
+  "rulesVersion": 1,
+  "typescriptTests": {
+    "passed": 84,
     "failed": 0,
     "skipped": 0
   },
-  "androidJvmTests": {
+  "kotlinTests": {
     "passed": 10,
     "failed": 0,
     "skipped": 0
   },
-  "buildResult": "BUILD SUCCESSFUL in 1m 2s",
-  "emulatorBuildResult": "BUILD SUCCESSFUL in 1m 10s",
-  "sameHermesBundleArm64AndX86": true,
+  "typecheck": "passed",
+  "hermesSha256": "59628166c1e4f4081a82013c89a1f94f013bba2945437af3ac55d80519fe0623",
+  "emulatorApkSha256": "ff3bd9c21cfd91fe69ec8b34dac65d54528c2d2e85fda1112979ed308145c4bf",
+  "hermesIdenticalAcrossArchitectures": true,
   "referencedOriginalPngsVerifiedByDecodedPixels": 53,
-  "physicalDevicesForThisBuild": [],
-  "emulatorCheck": {
-    "status": "selected final-build native flows passed",
-    "platform": "Android10/API29 x86_64 software renderer without KVM; system animations disabled",
-    "installedApkSha256": "92edc5ba7b32666a80fb3612db36b092810ea28595d0d31a57a57989808b0a99",
-    "installedApkMatchesArtifact": true,
-    "observed": [
-      "Upgrade retained Veli and berry stock6 from prior test save",
-      "Final guided departure via three trail markers",
-      "Force-stopped immediately after departure; waited130s without game process",
-      "Relaunched app: returned resident and bag ready",
-      "Opened bag: saved moonleaf and +2 petals confirmation",
-      "Two moonleaf discoveries left one permanent collection slot"
+  "assetManifestHashes": "all verified",
+  "physicalDevicesTested": [],
+  "ios": "sources/prebuild only; no Xcode/IPA/iPhone",
+  "nativeEmulator": {
+    "system": "Android 10/API29 x86_64",
+    "display": "320x640, software rendering without KVM",
+    "normalAnimationPerformance": "not measured; system animation scale disabled",
+    "installedApkSha256": "ff3bd9c21cfd91fe69ec8b34dac65d54528c2d2e85fda1112979ed308145c4bf",
+    "checks": [
+      "Upgrade preserved 6 berries, 8 petals, three creature identities and moonleaf collection",
+      "Final APK: partial quiet gesture, background and reopen resets unclaimed progress",
+      "Final APK: three real light gestures, saved memory and journal with both participants",
+      "Final APK: force-stop/reopen retains shared memory",
+      "Final APK: four alternating ball gestures between Ambre and Veli, saved memory"
     ],
-    "unverified": [
-      "Physical device flows and performance",
-      "Stream route and early recall on device",
-      "Widget launcher, TalkBack and large fonts"
-    ],
-    "limitations": [
-      "Slow software emulator; no proof of normal animation or FPS/battery",
-      "Initial candidate navigation script did not pass; final navigation/offline script passed"
-    ]
+    "fixtures": "Upgrade uses previous emulator save. Initial pilot observed natural first visitor. Final gesture checks use valid worlds produced by the pure engine: native-final-quiet/minute2, native-ball-46/minute180. Only isolated VM test saves were replaced; backup retained. No phone data modified.",
+    "intermediateRuns": "Earlier exploratory UI runs are separate; one stopped before the final APK installation. They are not counted as final passing scenarios."
   },
-  "ios": "Sources/prebuild only, no Xcode/IPA/iPhone",
-  "limits": [
-    "Provisional original artwork, no full side walk profiles or sound",
-    "Two routes, one resident at a time, three findings; no shared exploration yet",
-    "Gesture/layout/accessibility/widget/FPS/memory/battery remain unverified on physical devices",
-    "No payments, overlay, stories/eggs, sync or store publication"
+  "limitations": [
+    "Provisional art; no sound",
+    "Physical gestures, TalkBack, large fonts, normal frame rate, battery and launcher widget still to test",
+    "No store, payment, overlay, cloud saves, shared stories or eggs"
   ],
-  "hermesSha256": "a8274acb6e741b20d606a057ccd34ef215d71a646f470612bab7d8b65066ca79",
-  "assetManifestHashes": "all verified"
+  "buildResult": "BUILD SUCCESSFUL in 1m 11s",
+  "emulatorBuildResult": "BUILD SUCCESSFUL in 53s",
+  "physicalFeedbackPreviousVersion": "User reports 0.6.0 installation refusal caused by full phone storage; resolved and working after freeing space. No detailed physical 0.7.0 protocol completed.",
+  "sourceCommit": "3d18be7fd7f849fc696b8e781e83107c45cb4e9f"
 }
