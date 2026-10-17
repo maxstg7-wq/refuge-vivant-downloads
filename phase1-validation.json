@@ -3,8 +3,8 @@
   "versionCode": 7,
   "dateToronto": "2026-10-16",
   "package": "org.refugevivant.lab",
-  "bytes": 38574532,
-  "sha256": "85ed3972ce825bebafdd6751e3be45bc973fe749fc9eb9944bdf777bd18cff0f",
+  "bytes": 38575272,
+  "sha256": "faf055bd81d0149c1f998f4d671dee93e8367e16a80cc9bf39beae002e66c57a",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
   "sameTestCertificate": true,
   "abi": [
@@ -26,26 +26,38 @@
     "failed": 0,
     "skipped": 0
   },
-  "buildResult": "BUILD SUCCESSFUL in 1m 21s",
+  "buildResult": "BUILD SUCCESSFUL in 1m 29s",
   "engineChange": "First scripted visit at 2 simulated minutes for a new world, otherwise existing rules retained",
   "physicalDevicesForThisBuild": [],
   "emulatorCheck": {
     "platform": "Android10/API29 x86_64, software rendering without KVM; separate x86_64 build",
     "observed": [
-      "Native full habitat displayed and bowl tap opened meal activity on pre-final 0.5.0 build"
+      "Native full habitat displayed and bowl tap opened meal activity on pre-final 0.5.0 build",
+      "Final x86_64 build relaunched after slow install: full habitat and meal activity rendered, title/hint corrected",
+      "Pre-correction native meal drags did not progress; return tap worked",
+      "Intermediate meal draganddrop later showed two yellow progress dots; initial non-progress screenshots were not conclusive about delayed gestures",
+      "Intermediate meal completed: three yellow dots, saved confirmation and eating reaction, native screenshot",
+      "Final fixed-surface APK: relationship scene displayed after restart; berry stock7 retained from prior saved meal (initial8)",
+      "Final fixed-surface APK: bath opened, two scrub swipes cleared all six dirt spots, saved confirmation and washing reaction observed",
+      "After final three meal drags: stock6 instead of7, next meal rejected as too recent; saved single-portion effect and cooldown observed"
     ],
     "unverified": [
-      "Full gesture completion",
-      "Final build full native interaction",
       "Physical phone rendering/gestures",
-      "Widget launcher rendering"
+      "Widget launcher rendering",
+      "Native ball/cuddle and remaining navigation/accessibility flows",
+      "Final meal confirmation frame (effect and cooldown observed instead)"
     ],
     "limitations": [
       "System UI ANR before app render",
       "Corrupted GPU frame in software emulator",
       "System animations disabled for subsequent checks",
-      "Final update install timed out after120s; later launch produced a blank frame, no complete final-build native validation"
-    ]
+      "Final update client timed out at120s, install eventually completed; transient blank launch, subsequent relaunch rendered habitat and meal"
+    ],
+    "diagnosticScript": {
+      "result": "not passed: expected meal opening while final meal already completed",
+      "observed": "Stock6 and care-too-recent refusal; no new gestures injected by this script",
+      "countedAsPassingAutomatedTest": false
+    }
   },
   "ios": "Source/prebuild only, no Xcode build or device test",
   "limits": [
@@ -58,5 +70,8 @@
     "modules/refuge-widget/android/build/test-results/testDebugUnitTest/TEST-org.refugevivant.widget.SnapshotContractTest.xml",
     "modules/refuge-widget/android/build/test-results/testDebugUnitTest/TEST-org.refugevivant.widget.WidgetPresentationTest.xml"
   ],
-  "referencedOriginalPngsVerifiedByDecodedPixels": 43
+  "referencedOriginalPngsVerifiedByDecodedPixels": 43,
+  "gestureFix": "Fixed full-stage gesture surface independent from animated objects, start near pickup and end on target; habitat SceneDrag retains initial pageX/pageY",
+  "emulatorBuildResult": "BUILD SUCCESSFUL in 59s",
+  "sameHermesBundleArm64AndX86": true
 }
