@@ -1,18 +1,18 @@
 {
-  "version": "0.8.0",
-  "versionCode": 10,
+  "version": "0.9.0",
+  "versionCode": 11,
   "package": "org.refugevivant.lab",
-  "bytes": 38962960,
-  "sha256": "a505f552d1646bd0956c8ef8a4e6eabfb76401605801b5566b3304226c15e919",
+  "bytes": 39059328,
+  "sha256": "1eff603cb8dd54e99962f4d2fb63a8ff7d8ee59dbf384bc7f4477cea569f2e54",
   "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
   "minimumAndroid": "7/API24",
   "abi": "arm64-v8a",
-  "worldSchema": 5,
+  "worldSchema": 6,
   "sqliteSchema": 3,
   "widgetContract": 1,
   "rulesVersion": 1,
   "typescriptTests": {
-    "passed": 96,
+    "passed": 105,
     "failed": 0,
     "skipped": 0
   },
@@ -22,28 +22,32 @@
     "skipped": 0
   },
   "typecheck": "passed",
-  "hermesSha256": "533edc1e387cdd78926782f1cb6663054f7082b796ac9e3be46298dde365c021",
-  "emulatorApkSha256": "f13b8e998f7f98caffcf4b82796894a4dd30906ef1f4915599a4842446d54b47",
+  "hermesSha256": "439daf4dd44f63b343cce11f963e1deaf715aeb7baf1b972687fa065a9af8ba3",
+  "emulatorApkSha256": "0cae813a0b7da31a5759d68e473ae6c8217ebfb30cca52d5f3fdfd5f261f2785",
   "hermesIdenticalAcrossArchitectures": true,
-  "referencedOriginalPngsVerifiedByDecodedPixels": 57,
+  "referencedOriginalPngsVerifiedByDecodedPixels": 63,
   "assetManifestHashes": "all verified",
   "physicalDevicesTested": [],
   "ios": "sources/prebuild only; no Xcode/IPA/iPhone",
   "nativeEmulator": {
-    "system": "Android 10/API29 x86_64",
-    "display": "320x640, software rendering without KVM",
+    "system": "Android10/API29 x86_64",
+    "display": "320x640 software rendering without KVM",
     "normalAnimationPerformance": "not measured; system animation scale disabled",
-    "installedApkSha256": "f13b8e998f7f98caffcf4b82796894a4dd30906ef1f4915599a4842446d54b47",
-    "upgrade": "world4 to5 on final APK; inventory, creature identities/names/traits/residence, furniture and collection retained",
-    "fixture": "native-eight at minute2, produced by engine commands only: sharedPlay quiet, wash, plant; no edited scores/traits; isolated AVD, previous SQLite backed up",
+    "installedApkSha256": "0cae813a0b7da31a5759d68e473ae6c8217ebfb30cca52d5f3fdfd5f261f2785",
+    "upgrade": "native world5-to6; inventory, creature identities/names/species/traits/likes/residence, shelter, furniture, album and keepsakes retained",
+    "fixture": "native-nine, minute2, created and advanced by pure engine without edited traits/needs/scores; prior AVD SQLite backed up; no phone touched",
     "observations": [
-      "Resident autonomously waters an unwatered plot without player watering gesture; action bubble visible",
-      "All three shelter stages completed by real native drag gestures",
-      "Force-stop after stage1, reopen resumes at stage2",
-      "Both builders sleep under complete shelter; gentle wake leaves other builder asleep",
-      "Native SQLite snapshot confirms stage3, inventory 8 berries/2 petals/2 honey/2 dust, one completion and one first-rest keepsake"
+      "Kitchen scene object and illustrated recipe book open/close",
+      "Real ingredient drags form exact recipe",
+      "Partial mixing gesture yields no meal",
+      "Continuous two-circle native touchscreen gesture prepares one meal",
+      "Force-stop/reopen retains prepared meal",
+      "Real meal drag serves Veli and reveals favorite taste in creature sheet",
+      "Native SQLite: 7 berries/4 petals/2 honey/3 dust; no prepared portion remaining; one feed and one taste keepsake",
+      "Resident away with Lune only: kitchen selects present guest; no-present case stays usable with unavailable cycling disabled"
     ],
-    "pilot": "Earlier 0.8 APK with action bubbles below actors used to check layout, distinct from final evidence; final controls rerun after bubble correction",
+    "edgeFixtures": "native-nine-guest and native-nine-empty: real exploration departure then vacation freeze, no direct editing of needs/traits/scores",
+    "pilot": "Earlier 0.9 build used for layout only; final functional checks rerun after reset-control and companion-fallback fixes; pilot log separate",
     "physicalDevices": []
   },
   "limitations": [
@@ -51,8 +55,8 @@
     "Physical gestures, TalkBack, large fonts, normal frame rate, battery and launcher widget still to test",
     "No store, payment, overlay, cloud saves, shared stories or eggs"
   ],
-  "buildResult": "BUILD SUCCESSFUL in 1m 14s",
-  "emulatorBuildResult": "BUILD SUCCESSFUL in 58s",
-  "builtSourceContentMatches": 29,
-  "sourceCommit": "81c064ebf57ceb04e8d66b8afd17f1d152ad7540"
+  "buildResult": "BUILD SUCCESSFUL in 1m 30s",
+  "emulatorBuildResult": "BUILD SUCCESSFUL in 1m 10s",
+  "builtSourceContentMatches": 32,
+  "sourceCommit": "aedf5efff290ac42d2d23302b5062f519842c02e"
 }
